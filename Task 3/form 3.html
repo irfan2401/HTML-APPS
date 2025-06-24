@@ -8,7 +8,9 @@
 <body>
     <form action="">
         <table cellpadding="5px" cellspacing="5px" style="background-color: rgba(10, 10, 141, 0.808);" align="center">
-            <tr style="background-color: orange;"><td colspan="2">Sign Up</td></tr>
+            <tr style="background-color: orange;">
+                <td colspan="2">Sign Up</td>
+            </tr>
             <tr>
                 <td><label for="fname">First Name</label></td>
                 <td><input type="text" id="fname" name="fname"></td>
@@ -24,7 +26,7 @@
             <tr>
                 <td><label for="dob">Date of Birth</label></td>
                 <td>
-                    <select>
+                    <select id="month" name="month">
                         <option value="January">January</option>
                         <option value="February">February</option>
                         <option value="March">March</option>
@@ -33,14 +35,14 @@
                         <option value="June">june</option>
                         <option value="July">July</option>
                     </select>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <select>
+                    <select id="day" name="day">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
                     </select>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <select>
+                    <select id="year" name="year">
                         <option value="2001">2001</option>
                         <option value="2002">2002</option>
                         <option value="2003">2003</option>
@@ -52,14 +54,14 @@
             <tr>
                 <td>Gender</td>
                 <td>
-                    <input type="radio" name="gender" value="male"> Male
-                    <input type="radio" name="gender" value="female"> Female
+                    <input type="radio" id="gender1" name="gender" value="male"> Male
+                    <input type="radio" id="gender2" name="gender" value="female"> Female
                 </td>
             </tr>
             <tr>
                 <td><label for="Country">Country</label></td>
                 <td>
-                    <select>
+                    <select id="Country" name="Country">
                         <option value="India">India</option>
                         <option value="USA">USA</option>
                         <option value="UK">USA</option>
@@ -85,11 +87,12 @@
                 <td><input type="password" name="password" id="password"></td>
             </tr>
             <tr>
-                <td colspan="2" align="right"><input type="checkbox" value="I agree to the Terms of Use">I agree to the Terms of Use</td>
+                <td colspan="2" align="right"><input type="checkbox" value="I agree to the Terms of Use">I agree to the
+                    Terms of Use</td>
             </tr>
             <tr style="background-color: orange;">
                 <td colspan="2" align="right">
-                    <input type="submit" name="submit" id="submit" style="background-color: rgb(59, 230, 25);">
+                    <input type="submit" value="submit" style="background-color: rgb(59, 230, 25);">
                     <input type="button" value="cancel" style="background-color: red;">
                 </td>
             </tr>

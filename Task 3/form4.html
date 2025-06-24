@@ -4,55 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form4</title>
 </head>
 
 <body>
-    <Form action="">
-        <table cellspacing="1px" cellpadding="1px" align="center">
-            <tr><td><h1>Registration Form</h1></td></tr>
+    <Form action="f4">
+        <table align="center">
+            <caption>
+                <h3>Registration Form</h3>
+            </caption>
             <tr>
-                <td><label for="fName">First Name</label></td>
-                <td><label for="lName">Last Name</label></td>
-            </tr>
-            <tr>
-                <td><input type="text" name="fname" id="fname"></td>
-                <td><input type="text" name="lname" id="lname"></td>
-            </tr>
-            <tr>
-                <td><label for="dob">Birthday</label></td>
-                <td><label for="gender">Gender</label></td>
-            </tr>
-            <tr>
-                <td><input type="date" name="dob" id="dob"> </td>
-                <td>
-                    <input type="radio" value="Male">Male
-                    <input type="radio" value="Female">Female
+                <td><label>First Name</label><br>
+                    <input type="text" id="id1" name="name1">
+                </td>
+                <td><label>Last Name</label><br>
+                    <input type="text" id="id2" name="name2">
                 </td>
             </tr>
             <tr>
-                <td><label for="email">Email</label></td>
-                <td><label for="Phone Number">Phone Number</label></td>
+                <td><label>Birthday</label><br>
+                    <input type="date" id="id3" name="name3">
+                </td>
+                <td><label>Gender</label><br>
+                    <input type="radio" value="Male" id="gender1" name="gender">MALE
+                    <input type="radio" value="Female" id="female" name="gender">FEMALE
+                </td>
             </tr>
             <tr>
-                <td><input type="email" name="email" id="email"></td>
-                <td><input type="number" name="Phone Number" id="Phone Number"></td>
+                <td><label>Email</label><br>
+                    <input type="email" id="id4" name="name4">
+                </td>
+                <td><label>Phone Number</label><br>
+                    <input type="number" id="id5" name="name5">
+                </td>
             </tr>
             <tr>
-                <td><label for="subject">subject</label></td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <select name="choose option" id="choose option">
-                        <option value="">choose option</option>
-                        <option value="value2">value1</option>
-                        <option value="value3">value2</option>
-                        <option value="value4">value3</option>
+                <td><label>subject</label><br>
+                    <select id="subject " name="subject">
+                        <option value="select subject">select subject</option>
+                        <option value="Maths">MATHS</option>
+                        <option value="Physics">PHYSICS</option>
+                        <option value="Chemistry">CHEMISTRY</option>
                     </select>
                 </td>
             </tr>
             <tr>
-                <td><input type="submit" name="submit" id="submit" style="background-color: skyblue;"></td>
+                <td><input type="submit" value="submit" style="background-color: skyblue;"></td>
             </tr>
         </table>
     </form>
